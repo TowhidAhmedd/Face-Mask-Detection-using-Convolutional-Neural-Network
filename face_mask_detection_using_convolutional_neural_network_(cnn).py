@@ -2,15 +2,11 @@ import os
 import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib.image as mpimg
-# !pip install opencv-python
 import cv2
 from google.colab.patches import cv2_imshow
 from PIL import Image
 from sklearn.model_selection import train_test_split
 
-# from google.colab import drive
-# drive.mount('/content/drive')
-# !ls /content/drive/MyDrive
 
 from google.colab import drive
 drive.mount('/content/drive')
