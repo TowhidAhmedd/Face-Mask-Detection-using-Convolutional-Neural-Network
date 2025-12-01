@@ -220,10 +220,12 @@ model.compile(optimizer='adam',
 # training the neural network
 history = model.fit(X_train_scaled, Y_train, validation_split=0.1, epochs=5)
 
+
 """Model Evaluation"""
 
 loss, accuracy = model.evaluate(X_test_scaled, Y_test)
 print('Test Accuracy =', accuracy)
+
 
 # show line using matplotlib
 h = history
@@ -239,6 +241,7 @@ plt.plot(h.history['acc'], label='train accuracy')
 plt.plot(h.history['val_acc'], label='validation accuracy')
 plt.legend()  # Display the legend
 plt.show()
+
 
 """Predictive System"""
 
@@ -258,19 +261,14 @@ input_prediction = model.predict(input_image_reshaped)
 
 print(input_prediction)
 
+
 input_pred_label = np.argmax(input_prediction)
-
-print(input_prediction)
-
-if input_pred_label = np.argmax(input_prediction)
 print(input_pred_label)
 
 if input_pred_label == 1:
-
   print('The person in the image is wearing a mask')
 
 else:
-
   print('The person in the image is not wearing a mask')
 
 
